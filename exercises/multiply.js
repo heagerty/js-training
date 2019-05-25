@@ -8,7 +8,23 @@
  * @notions Primitive and Operators, Functions, While
  */
 
-// Your code :
+function multiply($num1, $num2) {
+    var sum;
+    var neg = 1;
+
+    if ($num2 < 0) {
+        neg = 0 - neg;
+        $num2 = 0 - $num2;
+    }
+
+    for (var i = 0, sum = 0; i < $num2; i++) {
+        sum += $num1;
+    }
+    if (neg < 0) {
+        sum = 0 - sum;
+    }
+    return sum;
+}
 
 //* Begin of tests
 const assert = require('assert')

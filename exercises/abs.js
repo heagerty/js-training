@@ -9,7 +9,13 @@
  * @notions Functions, Ternary
  */
 
-// Your code :
+
+function abs($num) {
+    if ($num < 0) {
+        $num = 0 - $num;
+    }
+    return $num;
+}
 
 //* Begin of tests
 const assert = require('assert')
