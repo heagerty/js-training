@@ -8,8 +8,14 @@
  */
 
 
+
+function whisper(string) {
+  return string.toLowerCase();
+}
+
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+
+assert.strictEqual(whisper('HELLO'), 'hello')
 // End of tests */

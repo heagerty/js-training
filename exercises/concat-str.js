@@ -8,6 +8,10 @@
 
 // Your code :
 
+let concatStr = (var1, var2) => {
+  return var1+var2;
+}
+
 //* Begin of tests
 const assert = require('assert')
 

@@ -10,10 +10,18 @@
  *
  */
 
+function jadenCase(string) {
+  const array = string.split(" ");
+  let newArray = array.map(function(word) {
+    return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+  });
+  return newArray.join(' ');
+}
+
 
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(jadenCase('Hello everybody'), 'Hello Everybody')
 // End of tests */

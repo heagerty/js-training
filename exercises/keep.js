@@ -12,9 +12,23 @@
  *
  */
 
+function keepFirst(string) {
+  return (string.slice(0, 2));
+}
+
+function keepLast(string) {
+  return (string.slice(-2));
+}
+
+function keepFirstLast(string) {
+  return (string.slice(2, 4));
+}
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(keepFirst('hello'), 'he')
+assert.strictEqual(keepLast('hello'), 'lo')
+assert.strictEqual(keepFirstLast('hello'), 'll')
+
 // End of tests */

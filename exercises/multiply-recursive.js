@@ -1,7 +1,7 @@
 'use strict'
 
 /*
- * Create a `multiply` function that takes two number as arguments
+ * Create a `multiply` function that takes two numbers as arguments
  * and returns the result of the multiplication of those two.
  * But you must do this without using the operators * or /
  * and no loops. You need to do it using recursion.
@@ -10,6 +10,33 @@
  */
 
 // Your code :
+
+
+function multiply(num1, num2) {
+
+
+  if (num1 == 0 || num2 == 0) {
+    return 0;
+  }
+
+  if (num1 < num2) {
+    return multiply(num2, num1)
+  }
+  if (num2 < 0) {
+    return -(multiply(num1, 0-num2));
+  }
+
+  if (num2 !== 0) {
+    return (num1 + multiply(num1, num2 - 1));
+  }
+
+  else {
+    return 0;
+  }
+
+
+
+}
 
 //* Begin of tests
 const assert = require('assert')
